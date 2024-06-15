@@ -29,8 +29,6 @@ public class CalculadoraTest {
 
     @Test
     public void testDivisionPorCero() {
-        assertThrows(ArithmeticException.class, () -> {
-            calculadora.division(10.0f, 0.0f);
-        });
+        assertThrows(ArithmeticException.class, () -> calculadora.division(10.0f, 0.0f));
     }
 }
